@@ -1,5 +1,3 @@
 # Python_Programs_Directory (OPENCV)
-Python Programs Directory Contains multiple python programs.
+Python Programs opencv Directory Contains multiple python programs using opencv.
 
-=> Reminder.py will remind you any thing using notification.
-=> Directory manages the directory.

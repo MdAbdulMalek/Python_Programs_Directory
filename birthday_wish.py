@@ -2,7 +2,7 @@ import pandas as pd
 import datetime
 import smtplib
 import os
-os.chdir(r"D:\MyData\birthday wisher")
+os.chdir(r"D:\MyData\birthday wisher")   ## The directory path
 # os.mkdir("testing") 
 
 # Enter your authentication details
@@ -20,7 +20,6 @@ def sendEmail(to, sub, msg):
     
 
 if __name__ == "__main__":
-    #just for testing
     # sendEmail(GMAIL_ID, "subject", "test message")
     # exit()
 
@@ -39,11 +38,9 @@ if __name__ == "__main__":
             sendEmail(item['Email'], "Happy Birthday", item['Dialogue']) 
             writeInd.append(index)
 
-    # print(writeInd)
     for i in writeInd:
         yr = df.loc[i, 'Year']
         df.loc[i, 'Year'] = str(yr) + ', ' + str(yearNow)
         # print(df.loc[i, 'Year'])
 
-    # print(df) 
     df.to_excel('data.xlsx', index=False)   

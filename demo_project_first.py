@@ -64,5 +64,5 @@ while True:
 
 
     cv2.imshow("Result", imgResult)
-    if cv2.waitKey(1) & 0xFF == ord('q'):
+    if cv2.waitKey(1) & 0xFF == ord('q'):  ### Press "q" to exit the loop.
         break
